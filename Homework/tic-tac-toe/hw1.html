@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW1</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/hw1.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+
+		var turn = 1;
+		var count = 0;
+		var winBoard = [[1,2,3],[1,4,7],[1,5,9],
+				[2,5,8],[3,5,7],[3,6,9],[4,5,6],[7,8,9]];
+		var player1 = [];
+		var player2 = [];
+		var continuePlay = true;
+		$(document).ready(function(){
+			$("div[id^='box']").click(function(){
+				var id = $(this).attr('id');
+				if(!$(this).hasClass("o-mark") &&
+					!$(this).hasClass("x-mark") && continuePlay == true){
+					if(turn == 1){
+						$(this).addClass("o-mark");
+						update(player1, id);
+						$('#p').text("Player X on move");
+						turn = 2;
+					}
+					else if(turn == 2){
+						$(this).addClass("x-mark");
+						update(player2, id);
+						$('#p').text("Player O on move");
+						turn = 1;
+					}
+					count++;
+					check();
+				}
+			});
+		});
+		function update(player, id){
+			switch (id){
+				case 'box1':
+					player.push(1);
+					break;
+				case 'box2':
+					player.push(2);
+					break;
+				case 'box3':
+					player.push(3);
+					break;
+				case 'box4':
+					player.push(4);
+					break;
+				case 'box5':
+					player.push(5);
+					break;								
+				case 'box6':
+					player.push(6);
+					break;									
+				case 'box7':
+					player.push(7);
+					break;									
+				case 'box8':
+					player.push(8);
+					break;	
+				case 'box9':
+					player.push(9);
+					break;					
+			}
+		}
+		function reset(){
+			$("div[id^='box']").removeClass("o-mark");
+			$("div[id^='box']").removeClass("x-mark");
+			$('#p').text("Player O on move");
+			turn = 1;
+			count = 0;
+			player1 = [];
+			player2 = [];
+			continuePlay = true;
+			$('#p').css("font-size","20px");
+			$('#p').css("color","black");
+		}
+		function check(){
+			var p1 = [];
+			var p2 = [];
+			player1.sort();
+			player2.sort();
+			for(var i = 0; i < player1.length; i++)
+				for(var j = i+1; j < player1.length; j++)
+					for(var h = j+1; h < player1.length; h++)
+						p1.push([player1[i],player1[j],player1[h]])
+			for(var i = 0; i < player2.length; i++)
+				for(var j = i+1; j < player2.length; j++)
+					for(var h = j+1; h < player2.length; h++)
+						p2.push([player2[i],player2[j],player2[h]])
+			var test = function(p, w){
+				return w.some(function(v){
+				return p.some(function(t){
+					return JSON.stringify(v) == JSON.stringify(t);
+				});
+				})}
+			 if(test(p1, winBoard)){
+			 	$('#p').text("Player O Wins!");
+			 	$('#p').css("font-size","40px");
+			 	$('#p').css("color","#D9534F");
+			 	continuePlay = false;
+			 }
+			 else if(test(p2, winBoard)){
+			 	$('#p').text("Player X Wins!");
+			 	$('#p').css("font-size","40px");
+			 	$('#p').css("color","#D9534F");
+			 	continuePlay = false;
+			 }	
+			 else if(count == 9){
+			 	$('#p').text("It's a Draw");
+			 	$('#p').css("font-size","40px");
+			 	$('#p').css("color","#D9534F");
+			 	continuePlay = false;
+			 }		 
+		}
+	</script>
+</head>
+<body>
+	<div id="xx" class="container">
+		<h1><b>Tic-Tac-Toe</b></h1>
+		<hr>
+		<p id="p">Player O on move</p> 
+		
+		<div class="playZoom" >
+			<div id="box1" class="block"></div>
+    		<div id="box2" class="block"></div>
+    		<div id="box3" class="block"></div>
+    		<div id="box4" class="block"></div>
+    		<div id="box5" class="block"></div>
+    		<div id="box6" class="block"></div>
+    		<div id="box7" class="block"></div>
+    		<div id="box8" class="block"></div>
+    		<div id="box9" class="block"></div>
+		</div>
+		<div class="reSet">
+		<hr>
+		<input type="button" class="reset btn btn-lg btn-danger btn-block" value="RESET" onClick="reset()" /> 
+		</div>
+	</div>
+</body>
+</html>

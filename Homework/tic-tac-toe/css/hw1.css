@@ -1,0 +1,55 @@
+.block {
+	width: 22%;
+	padding-bottom: 22%;
+	margin: 1.55%;
+	border-radius: 15%;
+	float: left;
+	background-color: black;
+
+}
+
+.x-mark{
+	background: url(./../image/x-mark-96.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+
+.o-mark{
+	background: url(./../image/o-mark-96.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	font-size: 20px;
+}
+
+.playZoom{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	left: 19.4%;
+  	width: 80%;
+}
+
+.container{
+	background-color: white;
+	position: relative;
+  	width: 60%;
+}
+
+.reSet{
+	position: relative;
+  	width: 62%;
+  	left: 18.5%;
+}
+
+img{
+	width:auto;
+	height:auto;
+}
