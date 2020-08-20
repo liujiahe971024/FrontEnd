@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo01</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script tpye="text/javascript">
+
+        var app = angular.module("mainApp", []);
+
+        app.controller("mainCtrl", ["$scope", "$log", function($scope, $log){
+            $scope.message = "Hello World!";
+            $scope.x = 10;
+            $scope.name = "";
+            $scope.nameWidthPreix = "Mr." + $scope.name;
+            $scope.$watch("name", function(newVal, oldVal){
+                //console.log($scope.$watch);
+                console.log(newVal, oldVal);
+            })
+        }])
+        app.controller("anotherCtrl", function(){
+            this.msg = "Hello from another controler";
+        })
+
+    </script>
+</head>
+<body ng-app="mainApp">
+    <div class="container" ng-controller="mainCtrl">
+        <h1>Angular Data Binding</h1>
+        <hr>
+        <h2>One Way Binding</h2>
+        <div>
+            <p>Binded Message: {{ message }}</p>
+            <p>Another Message: <span ng-bind="massage"></span></p>
+            <p ng-click="doChange()">Changed Message: {{ message | uppercase }}</p>
+            <p>x: {{ x | currency }}</p>
+        </div>
+        <hr>
+        <h2>Two way Binding</h2>
+        <p>Input your name: <input type="text" id="name" ng-model="name"></p>
+        <p>Your name is {{ name }}</p>
+        <hr>
+        <h2>One Time Binding</h2>
+        <p><input type="text" ng-model="count"></p>
+        <p>Count: {{ count }}</p>
+        <p>Fixed Count: {{ ::count }}</p>
+    </div>
+    <hr>
+<div class="container" ng-controller="anotherCtrl as ac">
+    <h1>Controller without $scope.</h1>
+    <p>Message: {{ ac.msg }}</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo02</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+		//all the dom elements are loaded.
+		$(document).ready(function(){
+			$('#btn1').click(function(){
+				$("#state").find("option").removeAttr("selected");
+				$("#state").find("option[value='VA']").attr("selected", true);
+			})
+			$('#btn2').click(function(){
+				$("#state").find("option:contains('Maryland')").attr("selected", true);
+			})
+
+			var log = console.log;
+			$("#btn3").click(function(){
+				log($("ul li:first"));
+				log($("ul li:last"));
+				log($("ul li:odd"));
+				log($("ul li:even"));
+				log($("ul li:nth-child(2)"));
+				log($("ul li:nth-child(2n)"));
+				log($("div.container div:nth-of-type(2)")); // select all the div elements, then find the 2nd one
+			})
+			$('#btn4').click(function(){
+				var $ul = $("ul#items");
+				$ul.append("<li>EJB</li>");
+				$("<li>jQuery</li>").appendTo($ul);
+			})
+			$('#btn5').click(function(){
+				var $ul = $('ul#items');
+				$ul.prepend("<li>Javascript</li>");
+				$("<li>Angular</li>").prependTo($ul);
+			})
+			$('#btn6').click(function(){
+				$('ul li').eq(2).after("<li>CSS</li>");
+				$("<li>HTML</li>").insertAfter($("ul li").eq(2));
+			})
+			$('#btn7').click(function(){
+				$("ol").remove();
+			})
+			var temp;
+			$('#btn8').click(function(){
+				if(!temp){
+					$(this).text("Put back");
+					temp=$("ol").detach();
+				}else{
+					$(this).text("Detach");
+					$("#mydiv").append(temp);
+					temp = null;
+				}
+			})
+			$('#btn9').click(function(){
+				$("ol").empty();
+			})	
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Advanced Selectors</h1>
+		<hr>
+		<p>
+			<select id="state">
+				<option value="">N/A</option>
+				<option value="NJ" selected>New Jersey</option>
+				<option value="MD">Maryland</option>
+				<option value="VA">Virginia</option>
+				<option value="NC">North Carolina</option>
+			</select>
+		</p>
+		<div>
+			<button id="btn1" class="btn btn-warning">Select By Value</button>	<!-- bootstrap -->
+			<button id="btn2" class="btn btn-warning">Select By Displayed Value</button>
+		</div>
+
+		<hr>
+		<h2>Selector of Collections</h2>
+		<ul id="items">
+			<li>Java</li>
+			<li>Jave EE</li>
+			<li>Spring</li>
+			<li>Hibernate</li>
+			<li>Struts</li>
+		</ul>
+		<div>
+			<button id="btn3" class="btn btn-primary">Select</button>
+			<button id="btn4" class="btn btn-primary">Append</button>
+			<button id="btn5" class="btn btn-primary">Prepend</button>
+			<button id="btn6" class="btn btn-primary">Insert</button>
+		</div>
+		<hr>
+		<div id="mydiv">
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ol>
+		</div>
+		<div>
+			<button id="btn7" class="btn btn-default">Remove</button>
+			<button id="btn8" class="btn btn-default">Detach</button>
+			<button id="btn9" class="btn btn-default">Empty</button>
+		</div>
+	</div>
+</body>
+</html>

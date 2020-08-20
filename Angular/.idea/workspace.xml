@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bf35719-397f-43fb-8738-98724dd8d962" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g0LEVXVKqhxIgmk4ZJa9jNAHZa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Angular2" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuji_k5al7\Desktop\BHT\Angular\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bf35719-397f-43fb-8738-98724dd8d962" name="Default Changelist" comment="" />
+      <created>1597246451724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597246451724</updated>
+      <workItem from="1597246452846" duration="21000" />
+      <workItem from="1597246485258" duration="2644000" />
+      <workItem from="1597274529961" duration="48000" />
+      <workItem from="1597327531644" duration="5986000" />
+      <workItem from="1597333825417" duration="622000" />
+      <workItem from="1597375330040" duration="49000" />
+      <workItem from="1597378986259" duration="4680000" />
+      <workItem from="1597417259565" duration="5632000" />
+      <workItem from="1597604788901" duration="10475000" />
+      <workItem from="1597673950219" duration="5992000" />
+      <workItem from="1597680641370" duration="10000" />
+      <workItem from="1597697090920" duration="146000" />
+      <workItem from="1597706330759" duration="4568000" />
+      <workItem from="1597759521294" duration="6276000" />
+      <workItem from="1597765870272" duration="107000" />
+      <workItem from="1597766029581" duration="1180000" />
+      <workItem from="1597768884001" duration="1231000" />
+      <workItem from="1597788642308" duration="62000" />
+      <workItem from="1597874656384" duration="4513000" />
+      <workItem from="1597879849324" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="924" y="304" key="FileChooserDialogImpl" timestamp="1597879859163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="924" y="304" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597879859163" />
+    <state width="1362" height="264" key="GridCell.Tab.0.bottom" timestamp="1597264671267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597247614490" />
+    <state width="1362" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597264671267" />
+    <state width="1362" height="264" key="GridCell.Tab.0.center" timestamp="1597264671267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597247614490" />
+    <state width="1362" height="264" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597264671267" />
+    <state width="1362" height="264" key="GridCell.Tab.0.left" timestamp="1597264671267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597247614490" />
+    <state width="1362" height="264" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597264671267" />
+    <state width="1362" height="264" key="GridCell.Tab.0.right" timestamp="1597264671267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1362" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597247614490" />
+    <state width="1362" height="264" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597264671267" />
+    <state x="1243" y="382" width="393" height="283" key="XPathView.InputDialog.DIMENSION_SERVICE_KEY.SIMPLE" timestamp="1597625890084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1243" y="382" width="393" height="283" key="XPathView.InputDialog.DIMENSION_SERVICE_KEY.SIMPLE/0.0.1920.1040@0.0.1920.1040" timestamp="1597625890084" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1597626268565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597626268565" />
+    <state x="1096" y="244" key="run.anything.popup" timestamp="1597677546450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1096" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597677546450" />
+    <state x="1103" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1597763538643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597763538643" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+</project>

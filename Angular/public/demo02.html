@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo02</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script tpye="text/javascript">
+        var app = angular.module("mainApp", []);
+
+        app.controller("mainCtrl", ["$scope", "$compile", function($scope, $compile){
+            $scope.person={
+                firstName: "Bruce",
+                lastName: "Lee",
+                getName: function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            $scope.itemList = [
+                {itemNo: "A001", price: 10, qty: 30, inStock: true},
+                {itemNo: "A002", price: 20, qty: 3, inStock: true},
+                {itemNo: "A003", price: 30, qty: 5, inStock: false},
+                {itemNo: "A004", price: 40, qty: 13, inStock: true}
+            ]
+            $scope.doDelete = function(index){
+                $scope.itemList.splice(index, 1);
+            }
+            $scope.add = function(){
+                    var item = {
+                        itemNo: $scope.id,
+                        price: $scope.pr,
+                        qty: $scope.qty,
+                        inStock:  $scope.box
+                    }
+                    $scope.itemList.push(item);
+            }
+
+            $scope.update = function(index){
+                var name = $scope.itemList[index].itemNo;
+                var temp = angular.element(document.querySelector('#updateDiv'));
+                var str = "<form><div><h2>Update: " + name +
+                    "</h2></div><div><label>Item Number<input type='text'" +
+                    " class='form-control' ng-model=\"upId\"></label></div>" +
+                    "<div><label>Price<input type='number' class='form-control' " +
+                    "ng-model=\"upPr\"></label></div>" +
+                    "<div><label>Quantity<input type='number' class='form-control' " +
+                    "ng-model=\"upQty\"></label></div>" +
+                    "<div><label>In Stock<input type='checkbox' class='form-control' " +
+                    "ng-model=\"upBox\"></label></div>" +
+                    "</form><button type='button' " +
+                    "ng-click='doUpdate("+ index +")' class='btn btn-primary'>Update</button><hr>";
+                var compileStr = $compile(str)($scope);
+                temp.append(compileStr);
+            }
+            $scope.doUpdate = function(index){
+                var item = {
+                    itemNo: $scope.upId,
+                    price: $scope.upPr,
+                    qty: $scope.upQty,
+                    inStock:  $scope.upBox
+                }
+                $scope.itemList.splice(index, 1, item);
+                var temp = angular.element(document.querySelector('#updateDiv'));
+                temp.empty();
+            }
+        }])
+
+    </script>
+</head>
+<body ng-app="mainApp">
+<div class="container" ng-controller="mainCtrl">
+    <h1>Advanced Data Binding</h1>
+    <hr>
+    <h2>Binding for an object</h2>
+    <p>First Name: <input type="text" ng-model="person.firstName"></p>
+    <p>Last Name:  <input type="text" ng-model="person.lastName"></p>
+    <p>Full Name: {{ person.getName() }}</p>
+    <hr>
+    <h2>Binding for Collections</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>Item Number</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Value</th>
+            <th>In Stock</th>
+            <th>Operation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in itemList">
+            <td><a href="" ng-click="update($index)"> {{ item.itemNo }}</a></td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.qty }}</td>
+            <td>{{ item.price * item.qty }}</td>
+            <td>
+                <input type="checkbox" ng-model="item.inStock" ng-disabled="true">
+            </td>
+            <td>
+                <button class="btn btn-link" ng-click="doDelete($index)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div id="updateDiv">
+
+    </div>
+    <div class="container" >
+        <h2>Add</h2>
+        <form>
+            <div class="from-group">
+                <label>Item Number</label>
+                <input type="text" ng-model="id">
+            </div>
+            <div class="from-group">
+                <label>Price</label>
+                <input type="number"  ng-model="pr">
+            </div>
+            <div class="from-group">
+                <label>Quantity</label>
+                <input type="number" ng-model="qty">
+            </div>
+            <div class="from-group">
+                <label>In Stcok</label>
+                <input type="checkbox" ng-model="box">
+            </div>
+            <div>
+                <button id="add" type="button" class="btn btn-primary" ng-click="add()">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
