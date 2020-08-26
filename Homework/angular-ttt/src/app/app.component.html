@@ -1,0 +1,21 @@
+<div id="xx" class="container">
+  <h1><b>Tic-Tac-Toe</b></h1>
+  <hr>
+  <p id="p">{{ text }}</p>
+
+  <div class="playZoom" >
+    <div id="box1" class="block" (click)="clickBox($event)"></div>
+    <div id="box2" class="block" (click)="clickBox($event)"></div>
+    <div id="box3" class="block" (click)="clickBox($event)"></div>
+    <div id="box4" class="block" (click)="clickBox($event)"></div>
+    <div id="box5" class="block" (click)="clickBox($event)"></div>
+    <div id="box6" class="block" (click)="clickBox($event)"></div>
+    <div id="box7" class="block" (click)="clickBox($event)"></div>
+    <div id="box8" class="block" (click)="clickBox($event)"></div>
+    <div id="box9" class="block" (click)="clickBox($event)"></div>
+  </div>
+  <div class="reSet">
+    <hr>
+    <input type="button" class="reset btn btn-lg btn-danger btn-block" value="RESET" (click)="reset()" />
+  </div>
+</div>
