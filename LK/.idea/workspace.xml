@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcb6f04b-f346-4618-bbbe-8fc7eb28387f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Homework/angular-ttt/src/image/o-mark-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/angular-ttt/src/image/x-mark-96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Angular2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Angular2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Angular2/tsDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/tsDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lk/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Angular2/ng6Demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\winke\Desktop\BHT\FrontEnd\LK\lk\node_modules\typescript\lib" />
@@ -60,6 +58,9 @@
       <workItem from="1598278180053" duration="613000" />
       <workItem from="1598328597936" duration="56000" />
       <workItem from="1598364176146" duration="90000" />
+      <workItem from="1598483720105" duration="3927000" />
+      <workItem from="1598540387985" duration="5771000" />
+      <workItem from="1598566530172" duration="678000" />
     </task>
     <servers />
   </component>
@@ -83,10 +84,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598238163635" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1598364262405">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1598566595258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598364262405" />
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598566595258" />
     <state x="922" y="168" key="SettingsEditor" timestamp="1598231917848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
