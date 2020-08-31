@@ -1,0 +1,22 @@
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th><a href="javascript:void(0)" >Name</a></th>
+    <th><a href="javascript:void(0)" >Brand</a></th>
+    <th><a href="javascript:void(0)" >Price</a></th>
+    <th><a href="javascript:void(0)" >Stock</a></th>
+    <th><a href="javascript:void(0)" >Image</a></th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>{{ product.brand }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.stcok}}</td>
+    <img src="{{product.image}}" width="50" height="100">
+    <td><button class="btn btn-primary" (click)="doDelete(product)">delete</button></td>
+  </tr>
+  </tbody>
+</table>
