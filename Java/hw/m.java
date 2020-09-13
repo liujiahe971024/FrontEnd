@@ -1,4 +1,5 @@
 package p1;
+import java.util.Date;
 
 public class m{
     public static void main(final String[] args) {
@@ -60,7 +61,7 @@ class database{
         isbn = "X12312312312";
         name = "Book";
         author = "Bob";
-        date = "1997/10/24";
+        Date d = new Date();
     }
 }
 
