@@ -128,3 +128,11 @@ DELIMITER ;
 
 CALL spGenerateReport('CLERK');
 SELECT * FROM salary_report;
+
+SELECT * FROM employee
+where salary < 1000
+
+-- 1.
+SELECT distinct job FROM employee;
+-- 2.
+
